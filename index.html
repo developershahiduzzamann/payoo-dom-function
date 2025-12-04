@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo Mobile Bank</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/5cd4cb7ac6.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-lg min-h-screen mx-auto py-6 bg-[#F4F5F7]">
+        <div class="main">
+            <div class="flex items-center justify-center">
+                <div class="relative top-12">
+                    <img src="./assets/images/bg.png" alt="">
+                </div>
+                <div class="absolute">
+                    <img src="./assets/images/Group.png" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <form action="">
+                    <fieldset class="fieldset p-4">
+
+                    <label class="label text-xl">Account Number</label>
+                    <input id="account-number" type="number" class="input md:w-96" placeholder="Enter Your Number" value="01212564364" required/>
+
+                    <label class="label text-lg">4Digit Pin</label>
+                    <input id="pin-number" type="text" class="input md:w-96" placeholder="Pin Number" required value="1234"/>
+
+                    <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/dom.js"></script>
+</body>
+</html>

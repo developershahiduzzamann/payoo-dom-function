@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/5cd4cb7ac6.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-800">
+    <section class="max-w-lg min-h-screen mx-auto py-6  bg-[#F4F5F7]">
+        <div class="flex justify-between items-center mx-5 py-3">
+            <div class="flex justify-center items-center">
+                <div>
+                    <img class="w-14" src="./assets/images/Group.png" alt="">
+                </div>
+                <div >
+                    <h1 class="outfit text-lg font-extrabold">$ <span id="main-balance">4500</span></h1>
+                    <h3 class="outfit ">Available Balance</h3>
+                </div>
+            </div>
+            <div >
+                <div id="logout-btn" class="border rounded-lg border-[#E6E6E6] outfit text-sm  w-[102px] h-[38px] flex justify-center items-center text-[#838383]">
+                    <i class="fa-solid fa-right-from-bracket text-xs"></i>
+                    <button class="ml-1"> Log Out</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <section class=" pt-7 pb-10 bg-white border-b-white rounded-b-xl">
+            <div class="mt-3 mx-5">
+                <h1 class="outfit text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+                <p class="outfit text-base my-5 text-slate-500">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-2">
+                <div id="money-btn" class=" border rounded-lg border-[#E6E6E6] h-[100px] w-[140px] md:h-[100px] md:w-[150px] ">
+                    <div class="flex flex-col items-center justify-center mt-5">
+                        <img src="./assets/images/wallet1.png" alt="wallet1">
+                        <h1 class="mt-2 text-base outfit text-[#525252]">Add Money</h1>
+                    </div>
+                </div>
+                <div id="cash-out-btn" class=" border rounded-lg border-[#E6E6E6] h-[100px] w-[140px] md:h-[100px] md:w-[150px] ">
+                    <div class="flex flex-col items-center justify-center mt-5">
+                        <img src="./assets/images/send1.png" alt="send1">
+                        <h1 class="mt-2 text-base outfit text-[#525252]">Cashout</h1>
+                    </div>
+                </div>
+                <div class=" border rounded-lg border-[#E6E6E6] h-[100px] w-[140px] md:h-[100px] md:w-[150px] ">
+                    <div class="flex flex-col items-center justify-center mt-5">
+                        <img src="./assets/images/money1.png" alt="money1">
+                        <h1 class="mt-2 text-base outfit text-[#525252]">Transfer Money</h1>
+                    </div>
+                </div>
+                <div class=" border rounded-lg border-[#E6E6E6] h-[100px] w-[140px] md:h-[100px] md:w-[150px] ">
+                    <div class="flex flex-col items-center justify-center mt-5">
+                        <img src="./assets/images/bonus1.png" alt="bonus1">
+                        <h1 class="mt-2 text-base outfit text-[#525252]">Get Bonus</h1>
+                    </div>
+                </div>
+                <div class=" border rounded-lg border-[#E6E6E6] h-[100px] w-[140px] md:h-[100px] md:w-[150px] ">
+                    <div class="flex flex-col items-center justify-center mt-5">
+                        <img src="./assets/images/purse1.png" alt="purse1">
+                        <h1 class="mt-2 text-base outfit text-[#525252]">Pay Bill</h1>
+                    </div>
+                </div>
+                <div class=" border rounded-lg border-[#E6E6E6] h-[100px] w-[140px] md:h-[100px] md:w-[150px] ">
+                    <div class="flex flex-col items-center justify-center mt-5">
+                        <img src="./assets/images/transaction1.png" alt="transaction1">
+                        <h1 class="mt-2 text-base outfit text-[#525252]">Transactions</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="add-money" class=" bg-[#F4F5F7] pb-5">
+            <div class="mx-4 py-3">
+                <h1 class="outfit font-semibold text-lg">Add Money</h1>
+            </div>
+            <div class=" bg-white border-white rounded-xl mx-5 flex justify-center">
+                <form action="">
+                    <fieldset class="fieldset p-4">
+                        <legend class="text-xl outfit pt-2">Select A Bank</legend>
+                        <select class="h-[38px] border-[#E6E6E6] rounded-md text-lg outfit" name="" id="" >
+                            <option disabled selected class="">Select Bank</option>
+                            <option value="Nagad">Nagad</option>
+                            <option value="Bkash">Bkash</option>
+                            <option value="DBL">DBL</option>
+                        </select>
+
+                        <label class="label text-xl outfit">Bank Account Number</label>
+                        <input id="account-number" type="number" class="input md:w-96" placeholder="Enter Your Number" value="01212564364" required/>
+
+                        <label class="label text-xl outfit">Amount To Add</label>
+                        <input id="input-amount" type="number" class="input md:w-96" placeholder="Amount To Add" value="" required/>
+
+                        <label class="label text-xl outfit">Pin Number</label>
+                        <input id="pin-number" type="text" class="input md:w-96" placeholder="Pin Number" required value="1234"/>
+
+                        <button id="add-money-btn" class="btn btn-neutral bg-blue-700 mt-4">Add Money</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section id="cash-out" class=" bg-[#F4F5F7] pb-5">
+            <div class="mx-4 py-3">
+                <h1 class="outfit font-semibold text-lg text-center">Cash Out</h1>
+            </div>
+            <div class=" bg-white border-white rounded-xl mx-5 flex justify-center">
+                <form action="">
+                    <fieldset class="fieldset p-4">
+                        <!-- <legend class="text-xl outfit pt-2">Select A Bank</legend>
+                        <select class="h-[38px] border-[#E6E6E6] rounded-md text-lg outfit" name="" id="" >
+                            <option disabled selected class="">Select Bank</option>
+                            <option value="Nagad">Nagad</option>
+                            <option value="Bkash">Bkash</option>
+                            <option value="DBL">DBL</option>
+                        </select> -->
+
+                        <label class="label text-xl outfit">Agent Number</label>
+                        <input id="account-number" type="number" class="input md:w-96" placeholder="Enter Agent Number" value="01212564364" required/>
+
+                        <label class="label text-xl outfit">Amount</label>
+                        <input id="cashOut-amount" type="number" class="input md:w-96" placeholder="Enter Your Amount" value="" required/>
+
+                        <label class="label text-xl outfit">Pin Number</label>
+                        <input id="pin-number" type="text" class="input md:w-96" placeholder="Pin Number" required value="1234"/>
+
+                        <button id="Withdraw-btn" class="btn btn-neutral bg-blue-700 mt-4">Withdraw Money</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </section>
+    <script src="./assets/js/logOut.js"></script>
+    <script src="./assets/js/cashOut.js"></script>
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/addMoney.js"></script>
+</body>
+</html>
