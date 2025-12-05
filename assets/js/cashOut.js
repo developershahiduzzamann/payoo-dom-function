@@ -11,7 +11,7 @@ document.getElementById('Withdraw-btn').addEventListener('click',function(event)
     if(amount && pin){
         if( pin === 1234){
             const num = mainBalance - amount;
-            document.getElementById('main-balance').innerText = num;
+            setInnerTextByIDandValue('main-balance',num);
         }
         else{
             alert('Enter Valid Pin');

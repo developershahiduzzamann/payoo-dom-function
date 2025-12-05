@@ -11,7 +11,7 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
     if(amount && pin){
         if(pin === 1234){
             const sum = amount + balance;
-            document.getElementById('main-balance').innerText = sum;
+            setInnerTextByIDandValue('main-balance',sum);
         }
         else{
             alert('Enter Valid Pin');
