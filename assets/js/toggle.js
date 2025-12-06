@@ -1,11 +1,12 @@
 document.getElementById('cash-out').style.display='none'
 
 document.getElementById('money-btn').addEventListener('click',function(){
-    document.getElementById('cash-out').style.display = 'none';
-    document.getElementById('add-money').style.display = 'block';
+    getToggle("add-money","block");
+    getToggle("cash-out","none");
+    
 });
 
 document.getElementById('cash-out-btn').addEventListener('click',function(){
-    document.getElementById('add-money').style.display = 'none';
-    document.getElementById('cash-out').style.display = 'block';
+    getToggle("add-money","none");
+    getToggle("cash-out","block");
 });

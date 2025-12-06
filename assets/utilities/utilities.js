@@ -7,9 +7,13 @@ function getElementById(id){
 function getInnerTextById(id){
     const value = document.getElementById(id).innerText;
     const convartvalue = parseFloat(value);
-    return convartvalue
+    return convartvalue;
 }
 
 function setInnerTextByIDandValue(id,value){
     document.getElementById(id).innerText = value;
+}
+
+function getToggle(id,value){
+    document.getElementById(id).style.display = value;
 }
