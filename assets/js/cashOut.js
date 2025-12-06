@@ -6,6 +6,8 @@ document.getElementById('Withdraw-btn').addEventListener('click',function(event)
     const amount = getElementById('cashOut-amount');
     
     const pin = getElementById('pin-number');
+
+    const number = document.getElementById("account-number").value;
     
     if(amount && pin){
         if( pin === 1234){
@@ -15,7 +17,7 @@ document.getElementById('Withdraw-btn').addEventListener('click',function(event)
             const container = document.getElementById('transaction-div');
             const p =  document.createElement('p');
             p.innerText =`
-            cash Out ${amount} form ${num} Taka`
+            cash Out ${amount} form ${number} Account`
             container.appendChild(p);
         }
         else{
