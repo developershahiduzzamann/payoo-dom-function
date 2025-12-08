@@ -3,21 +3,26 @@ document.getElementById('Withdraw-btn').addEventListener('click',function(event)
 
     const mainBalance = getInnerTextById('main-balance')
 
-    const amount = getElementById('cashOut-amount');
+    const inputamount = getElementById('cashOut-amount');
     
     const pin = getElementById('pin-number');
 
     const number = document.getElementById("account-number").value;
+
+    if(inputamount < 0){
+        alert('Enter your cash out amount');
+        return;
+    }
     
-    if(amount && pin){
+    if(inputamount && pin){
         if( pin === 1234){
-            const num = mainBalance - amount;
+            const num = mainBalance - inputamount;
             setInnerTextByIDandValue('main-balance',num);
 
             const container = document.getElementById('transaction-div');
             const p =  document.createElement('p');
             p.innerText =`
-            cash Out ${amount} form ${number} Account`
+            cash Out ${inputamount} form ${number} Account`  
             container.appendChild(p);
         }
         else{

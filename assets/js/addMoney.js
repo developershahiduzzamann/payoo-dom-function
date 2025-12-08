@@ -20,7 +20,7 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
         if(pin === 1234){
             const sum = amount + balance;
             setInnerTextByIDandValue('main-balance',sum);
-
+ 
             const container = document.getElementById('transaction-div');
             const p = document.createElement("p")
             p.innerText = `
