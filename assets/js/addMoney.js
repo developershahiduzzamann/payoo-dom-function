@@ -12,7 +12,7 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
     const balance = getInnerTextById('main-balance');
 
     if(amount<0){
-        alert('get positive value')
+        alert('get positive value');
         return;
     }
     console.log("Hello this is javascript and this is very much easy subject")
@@ -25,7 +25,7 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
             const p = document.createElement("p")
             p.innerText = `
             AddMoney form ${bankAccount} ${amount} form ${number} Account`
-            container.appendChild(p)
+            container.appendChild(p);
         }
         else{
             alert('Enter Valid Pin');

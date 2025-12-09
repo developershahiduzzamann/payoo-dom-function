@@ -30,6 +30,6 @@ document.getElementById('Withdraw-btn').addEventListener('click',function(event)
         }
     }
     else{
-        alert('Cash Out Amount')
+        alert('Cash Out Amount');
     }
 });
