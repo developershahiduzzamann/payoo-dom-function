@@ -6,3 +6,9 @@
 hr{
     color: #E6E6E6;
 }
+.mony-history{
+    border: 2px solid rgb(123, 125, 131);
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
+}

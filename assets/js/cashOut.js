@@ -20,10 +20,10 @@ document.getElementById('Withdraw-btn').addEventListener('click',function(event)
             setInnerTextByIDandValue('main-balance',num);
 
             const container = document.getElementById('transaction-div');
-            const p =  document.createElement('p');
-            p.innerText =`
-            cash Out ${inputamount} form ${number} Account`  
-            container.appendChild(p);
+            const div = document.createElement("div")
+            div.classList.add("mony-history")
+            div.innerHTML = `<p>Cash Out ${inputamount} form ${number} Account </p>`
+            container.appendChild(div);
         }
         else{
             alert('Enter Valid Pin');

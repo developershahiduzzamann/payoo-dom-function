@@ -15,17 +15,15 @@ document.getElementById('add-money-btn').addEventListener('click',function(event
         alert('get positive value');
         return;
     }
-    console.log("Hello this is javascript and this is very much easy subject")
     if(amount && pin){
         if(pin === 1234){
             const sum = amount + balance;
             setInnerTextByIDandValue('main-balance',sum);
- 
             const container = document.getElementById('transaction-div');
-            const p = document.createElement("p")
-            p.innerText = `
-            AddMoney form ${bankAccount} ${amount} form ${number} Account`
-            container.appendChild(p);
+            const div = document.createElement("div")
+            div.classList.add('mony-history')
+            div.innerHTML =`<p>Add Money form ${bankAccount} ${amount} form ${number} Account </p>`
+            container.appendChild(div);
         }
         else{
             alert('Enter Valid Pin');
